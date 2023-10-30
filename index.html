@@ -49,7 +49,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/CV Atanas Spasov.pdf')"
           >
             Download CV
           </button>
@@ -245,58 +245,112 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/sprinters project.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Sprinters</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.
-                    href='https://github.com/refinednako'"
+                onclick="openPopup()"
               >
                 View More
               </button>
+              <div class="popup" id="popup">
+                <img src="./assets/sprinters.png">
+                <h2>Sprinters</h2>
+                <p>Sprinters is a project created during my second year of studying CMGT in Hanze UAS.
+                  The project is a local multiplayer split-screen recing game developed in Unity.
+                  In the development of this project I was in charge of creating a smooth running 
+                  movement system worthy of being in a racing game. 
+                </p>
+                <button type="button" onclick="location.href='https://www.youtube.com/watch?v=mD8koWYu0LA'">View More</button>
+                <button type="button" onclick="closePopup()">Close</button>
+              </div>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/swing city cover.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Swing City</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.
-                    href='https://github.com/refinednako'"
+                onclick="openPopup2()"
               >
                 View More
               </button>
+              <div class="popup2" id="popup2">
+                <img src="./assets/swing city cover.png">
+                <h2>Swing City</h2>
+                <p>Swing City was my first ever project in Unreal Engine. It was a great learning experience.
+                  I managed to learn a lot of the basics of the engine whilst also challenging my level design skills
+                  through the creation of this game.
+                </p>
+                <button type="button" onclick="location.href='https://www.youtube.com/watch?v=D52ETIBOUQo'">View More</button>
+                <button type="button" onclick="closePopup2()">Close</button>
+              </div>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/Hacked Out Cover IMG.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Hacked Out</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.
-                    href='https://github.com/refinednako'"
+                onclick="openPopup3()"
               >
                 View More
               </button>
+              <div class="popup3" id="popup3">
+                <img src="./assets/Hacked Out Cover IMG.png">
+                <h2>Hacked Out</h2>
+                <p>Hacked out is a VR Puzzle game developed on the Meta Quest 2. The concept of the game is 
+                  that you are trapped in the virtual world and have to complete three different puzzles in order to escape.
+                  My role in this project was a general game designer and programmer.
+                </p>
+                <button type="button" onclick="location.href='https://youtu.be/OwhC-iXvflI'">View More</button>
+                <button type="button" onclick="closePopup3()">Close</button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/3d icon.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">3D Projects</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openPopup4()"
+              >
+                View More
+              </button>
+              <div class="popup4" id="popup4">
+                <img src="./assets/3d icon.png">
+                <h2>3D Projects</h2>
+                <p>This is a collection of some of my favorite 3D assets I have created.
+                </p>
+                <button type="button" onclick="location.href='https://atanasspasov13.artstation.com/'">View More</button>
+                <button type="button" onclick="closePopup4()">Close</button>
+              </div>
             </div>
           </div>
         </div>
@@ -348,5 +402,43 @@
       <p>Copyright &#169; 2023 Atanas Spasov. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+      let popup = document.getElementById("popup");
+      function openPopup() 
+      {
+        popup.classList.add("open-popup");
+      }
+      function closePopup() 
+      {
+        popup.classList.remove("open-popup");
+      }
+      let popup2 = document.getElementById("popup2");
+      function openPopup2() 
+      {
+        popup2.classList.add("open-popup2");
+      }
+      function closePopup2() 
+      {
+        popup2.classList.remove("open-popup2");
+      }
+      let popup3 = document.getElementById("popup3");
+      function openPopup3() 
+      {
+        popup3.classList.add("open-popup3");
+      }
+      function closePopup3() 
+      {
+        popup3.classList.remove("open-popup3");
+      }
+      let popup4 = document.getElementById("popup4");
+      function openPopup4() 
+      {
+        popup4.classList.add("open-popup4");
+      }
+      function closePopup4() 
+      {
+        popup4.classList.remove("open-popup4");
+      }
+    </script>
   </body>
 </html>
